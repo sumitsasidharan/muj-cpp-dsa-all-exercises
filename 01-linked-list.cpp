@@ -1,4 +1,6 @@
 #include <iostream>
+#include <stdlib.h>
+#include <conio.h>
 using namespace std;
 
 struct node {
@@ -130,12 +132,57 @@ void LinkedList::DeleteGivenNode() {
   }
 }
 
-
+void LinkedList::Display() {
+  node *p;
+  p = start;
+  if (start == NULL) {
+    cout << "List is empty.\n";
+  }
+  else {
+    cout << "\nCONTENTS OF THE LIST ARE: | ";
+    while (p != NULL) {
+      cout << p->info;
+      cout << " ";
+      p = p->link;
+    }
+    cout << "|\n";
+  }
+}
 
 int main() {
-  cout << "Hello World!!\n";
+  system("cls");
 
+  LinkedList linklist;
+  int choice;
 
+  while(1) {
+    cout << "\n1. Insert at front of linked list.";
+    cout << "\n2. Insert after given element.";
+    cout << "\n3. Delete the front node of linked list.";
+    cout << "\n4. Delete a given element.";
+    cout << "\n5. Display linked list elements.";
+    cout << "\n6. Exit.";
+    cout << "\nENTER YOUR CHOICE: ";
 
+    cin >> choice;
+
+    switch(choice) {
+      case 1: linklist.InsertAtFrontNode();
+              break;
+      case 2: linklist.InsertAfterNode();
+              break;
+      case 3: linklist.DeleteFrontNode();
+              break;
+      case 4: linklist.DeleteGivenNode();
+              break;
+      case 5: linklist.Display();
+              break;
+      case 6: exit(0);
+
+      default: 
+        cout << "\nSorry your answer is incorrect!! Please enter correct choice (1-6)\n";    
+    }
+  }
+  
   return 0;
 }
