@@ -43,6 +43,7 @@ void Queue::Enqueue() {
   else {
     rear->next = temp;
   }
+  rear = temp; // rear points to the last node
 }
 
 void Queue::Dequeue() {
@@ -65,10 +66,11 @@ void Queue::display() {
     cout << "Queue is empty\n";
   }
   else {
+    cout << "\nContents of Queue: ";
     while(p != NULL) {
-      cout << "\nContents of Queue: ";
-      cout << p->info;
-      p = p->next;
+      // cout << p->info << "\t";
+      printf(" %d ", p->info);
+          p = p->next;
     }
   }
 }
