@@ -1,5 +1,5 @@
 /************************************
-  Applications of Stacks
+  Applications of Stacks 1: Evaluating Postfix Expression
 *************************************/
 
 #include <iostream>
@@ -46,9 +46,9 @@ void postfix::push(int item) {
 
 int postfix::pop() {
   if (top == -1) {
-    cout << "Stack is empty";
+    cout << "Stack is empty" << endl;
     // return NULL;
-    return -1;
+    
   }
   else {
     int data = stack[top];
