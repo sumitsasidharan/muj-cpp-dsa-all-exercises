@@ -1,5 +1,8 @@
 /**************************************
   Graphs Part B
+  Write a C++ Program for implementation of graph using following
+  Traversals on it
+  a) BFS (Breadth-first Search) b) DFS (Depth-first Search)
 ***************************************/
 
 #include <iostream>
