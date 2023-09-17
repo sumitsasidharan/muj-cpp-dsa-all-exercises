@@ -1,3 +1,7 @@
+/*
+  Issue with Deletion. No message displaying when Queue is empty.
+*/
+
 #include <iostream>
 #include <stdlib.h>
 #include <conio.h>
@@ -53,6 +57,7 @@ void Queue::display() {
     for (int i = front + 1; i <= rear; i++) {
       cout << q[i] << "\t";
     }
+    cout << endl;
   }
 }
 

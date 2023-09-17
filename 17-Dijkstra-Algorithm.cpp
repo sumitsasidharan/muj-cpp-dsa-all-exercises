@@ -27,8 +27,9 @@ class Graph {
     }
     struct node *p, *q, *k, *l;
     void create();
-    int sputil(char vt);
+    int sputil(char Vt);
     char getstart();  // returns start node's data
+    // ~Graph();         // Destructor to deallocate memory
 };
 
 char Graph::getstart()
@@ -52,8 +53,10 @@ void Graph::create()
     p = new node;
     p->data = dat;
     p->status = 0;
-    p->next = NULL;
-    p->adj = NULL;
+    // p->next = NULL;
+    // p->adj = NULL;
+    p->next = nullptr; // Initialize next to nullptr
+    p->adj = nullptr;  // Initialize adj to nullptr
 
     // first node if flag is 0
     if (flag == 0)
@@ -73,7 +76,7 @@ void Graph::create()
   p = start;
   while (p != NULL)
   {
-    cout << "Enter the liks to " << p->data << "(x to exit): ";
+    cout << "Enter the links to " << p->data << "(x to exit): ";
     flag = 0;
     while(1)
     {
@@ -125,7 +128,7 @@ void Graph::create()
   return;
 }
 
-int Graph::sputil (char vt)
+int Graph::sputil (char Vt)
 {
   node *m = NULL;
   int LowDv;  // Lowest Distance Value
@@ -157,7 +160,7 @@ int Graph::sputil (char vt)
       p = p->next;
     }
 
-    if (q->data == vt)
+    if (q->data == Vt)
     {
       break;
     }
@@ -180,9 +183,10 @@ int Graph::sputil (char vt)
 
 int main()
 {
-  system("cls");
+  
   char vs, vt;
   int shortest_distance = 0;
+  // system("cls");
 
   Graph graphobj;
   vs = graphobj.getstart();
