@@ -2,6 +2,12 @@
   Sorting Methods
   Write a C++ Program for sorting integer numbers using following methods:
   a) Bubble sort b) Selection sort
+
+  THIS PROGRAM IS FOR MERGE SORT
+
+  Enter the array size: 4
+  Enter the array elements to sort: 4 5 6 3
+  The sorted elements : 1 2 3 4
 ***************************************/
 
 #include <iostream>

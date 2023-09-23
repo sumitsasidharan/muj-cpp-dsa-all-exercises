@@ -1,3 +1,8 @@
+/*
+  Write a C ++ Program for implementation of Linked List performing following operations
+  a) Insertion b) Deletion
+*/
+
 #include <iostream>
 #include <stdlib.h>
 #include <conio.h>

@@ -1,7 +1,13 @@
 /**************************************
   Searching Methods
   Write a C++ Program for searching integer number using following methods
-  a) Sequential (Linear) Searching b) Binary Searching.
+  a) Sequential (Linear) Searching 
+
+  Input:
+  Enter the array size: 7
+  Enter the array elements: 2 5 3 6 8 5 4
+  Enter the number to be searched: 8
+  Element found at position: 5
 ***************************************/
 
 #include <iostream>

@@ -1,5 +1,5 @@
 /************************************
-  Implement Queues using Linked List
+  Write a C++ program for implementation of Queue Using Linked List
 *************************************/
 
 #include <iostream>

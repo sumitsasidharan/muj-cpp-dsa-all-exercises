@@ -1,5 +1,10 @@
 /**************************************
   Convert Infix Expression to Postfix
+  4. b) Write a C++ Program for conversion of Infix to postfix notation
+
+  Program Input:
+  Enter the Infix expression: (a+b*c-d)
+  Postfix Expression: abc*+d-
 ***************************************/
 
 #include <iostream>

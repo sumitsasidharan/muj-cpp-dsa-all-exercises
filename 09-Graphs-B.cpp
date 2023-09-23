@@ -1,8 +1,18 @@
 /**************************************
   Graphs Part B
   Write a C++ Program for implementation of graph using following
-  Traversals on it
-  a) BFS (Breadth-first Search) b) DFS (Depth-first Search)
+  Traversals on it b) DFS (Depth-first Search)
+
+  Input:
+  Enter the nodes in the graph(press x to exit): ABCDEFX
+  Enter the links to A (x to exit): BCDx
+  Enter the links to B (x to exit): EFx
+  Enter the links to C (x to exit): Fx
+  Enter the links to D (x to exit): x
+  Enter the links to E (x to exit): x
+  Enter the links to F (x to exit): x
+
+  DFS for graph is: A B E F C D
 ***************************************/
 
 #include <iostream>

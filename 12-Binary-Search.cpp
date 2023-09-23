@@ -1,6 +1,10 @@
 /**************************************
   Searching Methods:
   b) Binary Searching.
+
+  Enter the array size: 9
+  Enter the array elements: 21 22 23 24 25 26 27 28 29 30
+  Enter a value to search: 22
 ***************************************/
 
 #include <iostream>

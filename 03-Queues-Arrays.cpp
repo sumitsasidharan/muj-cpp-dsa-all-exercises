@@ -1,5 +1,6 @@
 /*
-  Issue with Deletion. No message displaying when Queue is empty.
+  Write a C++ program for implementation of Queue Using Array.
+  --> Issue with Deletion. No message displaying when Queue is empty.
 */
 
 #include <iostream>

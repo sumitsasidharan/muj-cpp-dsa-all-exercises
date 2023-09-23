@@ -1,5 +1,10 @@
 /************************************
   Applications of Stacks 1: Evaluating Postfix Expression
+  4. a) Write a C++ Program for Evaluation of postfix expression
+
+  Program Input:
+  Enter the postfix expression to be evaluated: 12*3+
+  Result is: 5
 *************************************/
 
 #include <iostream>

@@ -1,5 +1,5 @@
 /**************************************
-  Trees
+  Write a C++ Program for implementation of Binary tree using following Traversals on it a) Inorder b) preorder c) postorder
 ***************************************/
 
 #include <iostream>
@@ -26,7 +26,7 @@ int main() {
 
   while(1) {
     root = create(root);
-    cout << "Dow you want to continue(y/n): ";
+    cout << "Do you want to continue(y/n): ";
     cin >> c;
     if (c == 'n' || c == 'N') {
       break;

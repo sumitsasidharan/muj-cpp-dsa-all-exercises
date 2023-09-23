@@ -1,3 +1,8 @@
+/*
+  Write a C++ program for implementation of stack Using 
+  a) Array ONLY b) Linked List (not provided in MUJ Student portal)
+*/
+
 #include <iostream>
 #include <stdlib.h>
 #include <conio.h>
